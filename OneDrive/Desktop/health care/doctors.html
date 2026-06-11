@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MediCare Plus Doctors - Meet our expert medical specialists providing patient-centered care.">
+<title>MediCare Plus | Doctors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-loading" id="loader"><div class="loader"></div><p style="color:var(--text-light);font-size:0.875rem;">Loading MediCare Plus...</p></div>
+<nav id="mainNav"><div class="nav-inner"><a class="nav-logo" href="index.html">Medi<span>Care</span> Plus</a><div class="nav-links"><a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About Us</a><a href="services.html" data-page="services">Services</a><a href="doctors.html" data-page="doctors">Doctors</a><a href="blog.html" data-page="blog">Blog</a><a href="contact.html" data-page="contact">Contact</a><a href="signin.html" class="nav-signin">Sign In</a></div><button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="toggleMenu()">Home</a><a href="about.html" onclick="toggleMenu()">About Us</a><a href="services.html" onclick="toggleMenu()">Services</a><a href="doctors.html" onclick="toggleMenu()">Doctors</a><a href="blog.html" onclick="toggleMenu()">Blog</a><a href="contact.html" onclick="toggleMenu()">Contact</a><a href="signin.html" onclick="toggleMenu()">Sign In</a></div></nav>
+<div class="page active">
+  <div style="background:linear-gradient(135deg,var(--primary-light),var(--teal-light));padding:100px 0 60px;">
+    <div class="container text-center">
+      <div class="section-label">Our Team</div>
+      <h1 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">Meet Our Expert Doctors</h1>
+      <p class="section-sub" style="margin:0 auto;">340+ board-certified specialists committed to your wellbeing.</p>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="doctors-grid">
+        <div class="doctor-card" data-aos="fade-up"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=70" alt="Dr. Aryan Kapoor" loading="lazy"></div><div class="doctor-info"><h3>Dr. Aryan Kapoor</h3><div class="spec">Cardiology</div><div class="doctor-meta"><span>20 yrs exp</span><span>₹1200</span></div><div class="avail-badge">● Available Today</div></div></div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="100"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=70" alt="Dr. Priya Sharma" loading="lazy"></div><div class="doctor-info"><h3>Dr. Priya Sharma</h3><div class="spec">Neurology</div><div class="doctor-meta"><span>15 yrs exp</span><span>₹1500</span></div><div class="avail-badge">● Available Today</div></div></div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="200"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=70" alt="Dr. Ravi Menon" loading="lazy"></div><div class="doctor-info"><h3>Dr. Ravi Menon</h3><div class="spec">Orthopedics</div><div class="doctor-meta"><span>18 yrs exp</span><span>₹1100</span></div><div class="avail-badge" style="background:#FEF9C3;color:#B45309;">● Tomorrow</div></div></div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="300"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=70" alt="Dr. Anjali Nair" loading="lazy"></div><div class="doctor-info"><h3>Dr. Anjali Nair</h3><div class="spec">Pediatrics</div><div class="doctor-meta"><span>12 yrs exp</span><span>₹900</span></div><div class="avail-badge">● Available Today</div></div></div>
+        <div class="doctor-card" data-aos="fade-up"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=70" alt="Dr. Suresh Iyer" loading="lazy"></div><div class="doctor-info"><h3>Dr. Suresh Iyer</h3><div class="spec">General Surgery</div><div class="doctor-meta"><span>22 yrs exp</span><span>₹1300</span></div><div class="avail-badge">● Available Today</div></div></div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="100"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=70" alt="Dr. Meera Pillai" loading="lazy"></div><div class="doctor-info"><h3>Dr. Meera Pillai</h3><div class="spec">Dermatology</div><div class="doctor-meta"><span>10 yrs exp</span><span>₹800</span></div><div class="avail-badge" style="background:#FEF9C3;color:#B45309;">● Tomorrow</div></div></div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="200"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=70" alt="Dr. Kiran Reddy" loading="lazy"></div><div class="doctor-info"><h3>Dr. Kiran Reddy</h3><div class="spec">Oncology</div><div class="doctor-meta"><span>16 yrs exp</span><span>₹1800</span></div><div class="avail-badge">● Available Today</div></div></div>
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="300"><div class="doctor-img"><img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=400&q=70" alt="Dr. Nandini Roy" loading="lazy"></div><div class="doctor-info"><h3>Dr. Nandini Roy</h3><div class="spec">Psychiatry</div><div class="doctor-meta"><span>14 yrs exp</span><span>₹1000</span></div><div class="avail-badge">● Available Today</div></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer id="mainFooter"><div class="container"><div class="footer-grid"><div class="footer-brand"><h3>MediCare Plus</h3><p>India's most trusted healthcare network, combining clinical excellence with compassionate, patient-first care since 1999.</p><div class="social-icons"><div class="social-icon" onclick="window.location.href='404.html'" title="Instagram">📷</div><div class="social-icon" onclick="window.location.href='404.html'" title="Facebook">📘</div><div class="social-icon" onclick="window.location.href='404.html'" title="LinkedIn">💼</div></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Healthcare Services</h4><ul><li><a href="services.html">Consultation</a></li><li><a href="services.html">Emergency Care</a></li><li><a href="services.html">Diagnostics</a></li><li><a href="services.html">Dental Care</a></li><li><a href="services.html">Pediatrics</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="#">MG Road, Bengaluru 560001</a></li><li><a href="#">+91 80 4567 8900</a></li><li><a href="#">info@medicareplus.in</a></li><li><a href="#">Mon–Sat: 8AM–8PM</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 MediCare Plus. All rights reserved.</span><span>Designed for Healthcare Excellence</span></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

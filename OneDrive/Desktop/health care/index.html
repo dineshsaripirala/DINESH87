@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MediCare Plus - Premium Healthcare Services. Expert doctors, advanced diagnostics, and compassionate care for you and your family.">
+<title>MediCare Plus | Premium Healthcare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-loading" id="loader"><div class="loader"></div><p style="color:var(--text-light);font-size:0.875rem;">Loading MediCare Plus...</p></div>
+<nav id="mainNav"><div class="nav-inner"><a class="nav-logo" href="index.html">Medi<span>Care</span> Plus</a><div class="nav-links"><a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About Us</a><a href="services.html" data-page="services">Services</a><a href="doctors.html" data-page="doctors">Doctors</a><a href="blog.html" data-page="blog">Blog</a><a href="contact.html" data-page="contact">Contact</a><a href="signin.html" class="nav-signin">Sign In</a></div><button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="toggleMenu()">Home</a><a href="about.html" onclick="toggleMenu()">About Us</a><a href="services.html" onclick="toggleMenu()">Services</a><a href="doctors.html" onclick="toggleMenu()">Doctors</a><a href="blog.html" onclick="toggleMenu()">Blog</a><a href="contact.html" onclick="toggleMenu()">Contact</a><a href="signin.html" onclick="toggleMenu()">Sign In</a></div></nav>
+<div class="page active">
+  <section class="hero">
+    <div class="container" style="padding-top:100px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;min-height:calc(100vh - 120px);">
+        <div>
+          <div class="section-label">Trusted Healthcare</div>
+          <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,4rem);">Your partner for compassionate care and better health.</h1>
+          <p class="section-sub" style="margin-top:20px;max-width:540px;">MediCare Plus delivers world-class medical services, personalised treatment plans, and trusted specialists across India.</p>
+          <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:16px;"><a class="btn btn-primary" href="services.html">Explore Services</a><a class="btn btn-outline" href="contact.html">Book Appointment</a></div>
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(140px,1fr));gap:16px;margin-top:40px;">
+            <div class="stats-card">
+              <div class="counter" data-target="1200">0</div>
+              <p>Doctors & Specialists</p>
+            </div>
+            <div class="stats-card">
+              <div class="counter" data-target="12500">0</div>
+              <p>Patients Served</p>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:center;align-items:center;">
+          <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900&q=80" alt="Healthcare professionals" style="border-radius:32px;box-shadow:var(--shadow-lg);width:100%;max-width:520px;" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <div class="section-label">Our Services</div>
+        <h2 class="section-title">Complete care, all under one roof.</h2>
+        <p class="section-sub">From preventive health checks to emergency care, MediCare Plus offers modern facilities, experienced doctors, and seamless patient support.</p>
+      </div>
+      <div class="service-grid" style="margin-top:40px;">
+        <a href="services.html" class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">🩺</div>
+          <h3>General Medicine</h3>
+          <p>Primary care, chronic disease management, and family health services.</p>
+        </a>
+        <a href="services.html" class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">❤️</div>
+          <h3>Cardiology</h3>
+          <p>Heart health screening, cardiac surgery, and rehabilitation programs.</p>
+        </a>
+        <a href="services.html" class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">🧠</div>
+          <h3>Neurology</h3>
+          <p>Advanced diagnostics and treatment for brain and spine conditions.</p>
+        </a>
+        <a href="services.html" class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">👶</div>
+          <h3>Pediatrics</h3>
+          <p>Comprehensive child care from infancy through adolescence.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section style="background:var(--primary-light);">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <div class="section-label">Meet Our Doctors</div>
+        <h2 class="section-title">Expert care from specialists you can trust.</h2>
+      </div>
+      <div class="team-grid" style="margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:24px;">
+        <div class="card" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=500&q=70" alt="Dr. Priya Sharma"><h4>Dr. Priya Sharma</h4><p>Cardiologist</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=500&q=70" alt="Dr. Amit Mehta"><h4>Dr. Amit Mehta</h4><p>Neurologist</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="300"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=500&q=70" alt="Dr. Anjali Nair"><h4>Dr. Anjali Nair</h4><p>Pediatrician</p></div>
+      </div>
+      <div class="text-center" style="margin-top:32px;"><a class="btn btn-primary" href="doctors.html">View All Doctors</a></div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <div class="section-label">Insights</div>
+        <h2 class="section-title">Health articles and patient stories.</h2>
+      </div>
+      <div class="blog-grid" style="margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:24px;">
+        <a href="blog.html" class="card" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&q=70" alt="Wellness article"><h3 class="card-title">Nutrition for Strong Immunity</h3><p class="card-text">Practical food advice for everyday vitality and wellness.</p></a>
+        <a href="blog.html" class="card" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1516637090014-cb1ab78511f5?w=500&q=70" alt="Heart health article"><h3 class="card-title">Keeping Your Heart Healthy</h3><p class="card-text">Simple lifestyle changes that protect cardiovascular health.</p></a>
+        <a href="blog.html" class="card" data-aos="fade-up" data-aos-delay="300"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&q=70" alt="Sleep health article"><h3 class="card-title">Better Sleep, Better Health</h3><p class="card-text">Science-backed tips for deep, restorative sleep every night.</p></a>
+      </div>
+      <div class="text-center" style="margin-top:32px;"><a class="btn btn-outline" href="blog.html">Read Our Blog</a></div>
+    </div>
+  </section>
+  <section style="background:linear-gradient(135deg,#fff 0%,#EBF5FF 100%);">
+    <div class="container">
+      <div class="cta-card" data-aos="fade-up">
+        <div>
+          <div class="section-label">Ready to schedule?</div>
+          <h2 class="section-title">Get expert care in minutes.</h2>
+          <p class="section-sub">Book appointments, request consultations, and connect with our care team quickly and securely.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</div>
+<footer style="padding:40px 0;background:rgba(10,110,189,0.05);">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;">Medi<span style="color:var(--teal);">Care</span> Plus</div>
+    <div style="color:var(--text-light);font-size:0.95rem;">© 2026 MediCare Plus. All rights reserved.</div>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MediCare Plus Services - Comprehensive medical specialties, emergency care, diagnostics, and wellness plans.">
+<title>MediCare Plus | Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-loading" id="loader"><div class="loader"></div><p style="color:var(--text-light);font-size:0.875rem;">Loading MediCare Plus...</p></div>
+<nav id="mainNav"><div class="nav-inner"><a class="nav-logo" href="index.html">Medi<span>Care</span> Plus</a><div class="nav-links"><a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About Us</a><a href="services.html" data-page="services">Services</a><a href="doctors.html" data-page="doctors">Doctors</a><a href="blog.html" data-page="blog">Blog</a><a href="contact.html" data-page="contact">Contact</a><a href="signin.html" class="nav-signin">Sign In</a></div><button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="toggleMenu()">Home</a><a href="about.html" onclick="toggleMenu()">About Us</a><a href="services.html" onclick="toggleMenu()">Services</a><a href="doctors.html" onclick="toggleMenu()">Doctors</a><a href="blog.html" onclick="toggleMenu()">Blog</a><a href="contact.html" onclick="toggleMenu()">Contact</a><a href="signin.html" onclick="toggleMenu()">Sign In</a></div></nav>
+<div class="page active">
+  <div style="background:linear-gradient(135deg,var(--primary-light),var(--teal-light));padding:100px 0 60px;">
+    <div class="container text-center">
+      <div class="section-label">Our Services</div>
+      <h1 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">Comprehensive Medical Services</h1>
+      <p class="section-sub" style="margin:0 auto;">Expert care across all specialties — from preventive wellness to complex surgery.</p>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon">🩺</div>
+          <h3>General Consultation</h3>
+          <p>Comprehensive health assessments and primary care management by experienced GPs.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>Full body check-up</li><li>Preventive care</li><li>Chronic disease management</li></ul>
+          <div class="service-price">Basic ₹499 · Advanced ₹999 · Premium ₹2499</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">❤️</div>
+          <h3>Cardiology</h3>
+          <p>Complete heart care from ECG and echocardiograms to angioplasty and bypass surgery.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>Cardiac imaging</li><li>Interventional cardiology</li><li>Cardiac rehabilitation</li></ul>
+          <div class="service-price">Basic ₹999 · Advanced ₹2499 · Premium ₹4999</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">🧠</div>
+          <h3>Neurology</h3>
+          <p>Advanced diagnosis and treatment for brain, spine, and peripheral nervous system disorders.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>MRI & CT neurology</li><li>Stroke management</li><li>Epilepsy care</li></ul>
+          <div class="service-price">Basic ₹1299 · Advanced ₹2799 · Premium ₹5499</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">🦴</div>
+          <h3>Orthopedics</h3>
+          <p>Bone, joint, and musculoskeletal care with minimally invasive surgical techniques.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>Joint replacement</li><li>Sports medicine</li><li>Spine surgery</li></ul>
+          <div class="service-price">Basic ₹899 · Advanced ₹1999 · Premium ₹3999</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">👶</div>
+          <h3>Pediatrics</h3>
+          <p>Specialised child healthcare from newborns to adolescents with dedicated children's ward.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>Neonatal care</li><li>Vaccination programs</li><li>Growth monitoring</li></ul>
+          <div class="service-price">Basic ₹599 · Advanced ₹1299 · Premium ₹2499</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">🦷</div>
+          <h3>Dental Care</h3>
+          <p>Complete dental services from preventive care to cosmetic procedures and implants.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>Teeth whitening</li><li>Dental implants</li><li>Orthodontics</li></ul>
+          <div class="service-price">Basic ₹499 · Advanced ₹1499 · Premium ₹3499</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">🚑</div>
+          <h3>Emergency Care</h3>
+          <p>24/7 emergency department with trauma bays, ICU, and a dedicated rapid response team.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>Trauma management</li><li>Critical care</li><li>Air ambulance</li></ul>
+          <div class="service-price">Emergency consultation: ₹799</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">🔬</div>
+          <h3>Diagnostic Services</h3>
+          <p>1000+ laboratory tests and imaging services with NABL-accredited results.</p>
+          <ul style="font-size:0.8rem;color:var(--text-light);margin:12px 0;padding-left:16px;line-height:2;"><li>MRI, CT, X-Ray</li><li>Blood & urine panels</li><li>Genetic testing</li></ul>
+          <div class="service-price">From ₹299 per test</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer id="mainFooter"><div class="container"><div class="footer-grid"><div class="footer-brand"><h3>MediCare Plus</h3><p>India's most trusted healthcare network, combining clinical excellence with compassionate, patient-first care since 1999.</p><div class="social-icons"><div class="social-icon" onclick="window.location.href='404.html'" title="Instagram">📷</div><div class="social-icon" onclick="window.location.href='404.html'" title="Facebook">📘</div><div class="social-icon" onclick="window.location.href='404.html'" title="LinkedIn">💼</div></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Healthcare Services</h4><ul><li><a href="services.html">Consultation</a></li><li><a href="services.html">Emergency Care</a></li><li><a href="services.html">Diagnostics</a></li><li><a href="services.html">Dental Care</a></li><li><a href="services.html">Pediatrics</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="#">MG Road, Bengaluru 560001</a></li><li><a href="#">+91 80 4567 8900</a></li><li><a href="#">info@medicareplus.in</a></li><li><a href="#">Mon–Sat: 8AM–8PM</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 MediCare Plus. All rights reserved.</span><span>Designed for Healthcare Excellence</span></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

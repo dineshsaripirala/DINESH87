@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MediCare Plus Provider Dashboard - Monitor appointments, patients, and clinical analytics.">
+<title>MediCare Plus | Provider Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-loading" id="loader"><div class="loader"></div><p style="color:var(--text-light);font-size:0.875rem;">Loading MediCare Plus...</p></div>
+<nav id="mainNav"><div class="nav-inner"><a class="nav-logo" href="index.html">Medi<span>Care</span> Plus</a><div class="nav-links"><a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About Us</a><a href="services.html" data-page="services">Services</a><a href="doctors.html" data-page="doctors">Doctors</a><a href="blog.html" data-page="blog">Blog</a><a href="contact.html" data-page="contact">Contact</a><a href="signin.html" class="nav-signin">Logout</a></div><button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="toggleMenu()">Home</a><a href="about.html" onclick="toggleMenu()">About Us</a><a href="services.html" onclick="toggleMenu()">Services</a><a href="doctors.html" onclick="toggleMenu()">Doctors</a><a href="blog.html" onclick="toggleMenu()">Blog</a><a href="contact.html" onclick="toggleMenu()">Contact</a><a href="signin.html" onclick="toggleMenu()">Logout</a></div></nav>
+<div class="page active">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo"><span>MediCare Plus</span><br><small style="color:rgba(255,255,255,0.4);font-size:0.72rem;">Provider Portal</small></div>
+      <nav class="sidebar-nav">
+        <a href="#" data-section="overview" class="active" onclick="dashSection(event,'provider','overview')"><span class="icon">📊</span> Dashboard</a>
+        <a href="#" data-section="patients" onclick="dashSection(event,'provider','patients')"><span class="icon">👥</span> Patients</a>
+        <a href="#" data-section="appointments" onclick="dashSection(event,'provider','appointments')"><span class="icon">📅</span> Appointments</a>
+        <a href="#" data-section="analytics" onclick="dashSection(event,'provider','analytics')"><span class="icon">📈</span> Analytics</a>
+        <a href="#" data-section="reports" onclick="dashSection(event,'provider','reports')"><span class="icon">📄</span> Reports</a>
+        <a href="#" data-section="settings" onclick="dashSection(event,'provider','settings')"><span class="icon">⚙️</span> Settings</a>
+        <a href="index.html" style="margin-top:auto;border-top:1px solid rgba(255,255,255,0.1);padding-top:16px;"><span class="icon">🏠</span> Back to Home</a>
+        <a href="signin.html"><span class="icon">🚪</span> Logout</a>
+      </nav>
+    </aside>
+    <main class="dash-main" id="provider-dash-content"></main>
+  </div>
+</div>
+<footer id="mainFooter"><div class="container"><div class="footer-grid"><div class="footer-brand"><h3>MediCare Plus</h3><p>India's most trusted healthcare network, combining clinical excellence with compassionate, patient-first care since 1999.</p><div class="social-icons"><div class="social-icon" onclick="window.location.href='404.html'" title="Instagram">📷</div><div class="social-icon" onclick="window.location.href='404.html'" title="Facebook">📘</div><div class="social-icon" onclick="window.location.href='404.html'" title="LinkedIn">💼</div></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Healthcare Services</h4><ul><li><a href="services.html">Consultation</a></li><li><a href="services.html">Emergency Care</a></li><li><a href="services.html">Diagnostics</a></li><li><a href="services.html">Dental Care</a></li><li><a href="services.html">Pediatrics</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="#">MG Road, Bengaluru 560001</a></li><li><a href="#">+91 80 4567 8900</a></li><li><a href="#">info@medicareplus.in</a></li><li><a href="#">Mon–Sat: 8AM–8PM</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 MediCare Plus. All rights reserved.</span><span>Designed for Healthcare Excellence</span></div></div></footer>
+<script src="script.js"></script>
+<script>document.addEventListener('DOMContentLoaded', ()=>renderProviderDash('overview'));</script>
+</body>
+</html>

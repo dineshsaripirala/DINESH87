@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="About MediCare Plus - Trusted healthcare services with compassionate care and medical excellence.">
+<title>MediCare Plus | About Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-loading" id="loader"><div class="loader"></div><p style="color:var(--text-light);font-size:0.875rem;">Loading MediCare Plus...</p></div>
+<nav id="mainNav"><div class="nav-inner"><a class="nav-logo" href="index.html">Medi<span>Care</span> Plus</a><div class="nav-links"><a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About Us</a><a href="services.html" data-page="services">Services</a><a href="doctors.html" data-page="doctors">Doctors</a><a href="blog.html" data-page="blog">Blog</a><a href="contact.html" data-page="contact">Contact</a><a href="signin.html" class="nav-signin">Sign In</a></div><button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="toggleMenu()">Home</a><a href="about.html" onclick="toggleMenu()">About Us</a><a href="services.html" onclick="toggleMenu()">Services</a><a href="doctors.html" onclick="toggleMenu()">Doctors</a><a href="blog.html" onclick="toggleMenu()">Blog</a><a href="contact.html" onclick="toggleMenu()">Contact</a><a href="signin.html" onclick="toggleMenu()">Sign In</a></div></nav>
+<div class="page active">
+  <div class="about-hero">
+    <div class="container" style="padding-top:32px;">
+      <div class="text-center">
+        <div class="section-label">About Us</div>
+        <h1 class="section-title" style="font-size:clamp(2rem,5vw,3.2rem);">Pioneering Healthcare<br>Since <em style="color:var(--primary);">1999</em></h1>
+        <p class="section-sub" style="margin:0 auto;">For over 25 years, MediCare Plus has been at the forefront of healthcare innovation, combining medical excellence with genuine compassion.</p>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="about-grid">
+        <div data-aos="fade-right">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">Built on a Foundation of Trust</h2>
+          <p style="color:var(--text-light);line-height:1.8;margin-bottom:20px;">Founded in 1999 by Dr. Aryan Kapoor, MediCare Plus began as a single-specialty clinic with a vision: to make world-class healthcare accessible to every Indian family. Today, we operate 12 hospitals across 8 cities.</p>
+          <p style="color:var(--text-light);line-height:1.8;margin-bottom:28px;">Our team of 340+ specialists, 1,200+ nurses, and 2,000+ support staff work as one unified force — guided by the belief that every patient deserves not just treatment, but healing.</p>
+          <a class="btn btn-primary" href="doctors.html">Meet Our Team →</a>
+        </div>
+        <div data-aos="fade-left">
+          <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&q=70" alt="Medical team" style="width:100%;height:400px;object-fit:cover;" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background:var(--primary-light);">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <div class="section-label">Our Purpose</div>
+        <h2 class="section-title">Mission, Vision & Values</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px;" class="about-mvgrid">
+        <div class="card" data-aos="fade-up" data-aos-delay="100" style="padding:32px;"><div style="font-size:2rem;margin-bottom:16px;">🎯</div><h3 class="card-title" style="font-size:1.2rem;">Our Mission</h3><p class="card-text">To deliver compassionate, evidence-based healthcare that improves lives — making quality medical care accessible, affordable, and accountable for all.</p></div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200" style="padding:32px;"><div style="font-size:2rem;margin-bottom:16px;">🌟</div><h3 class="card-title" style="font-size:1.2rem;">Our Vision</h3><p class="card-text">To be India's most trusted healthcare network, recognised globally for clinical excellence, patient satisfaction, and innovative medical research.</p></div>
+      </div>
+      <div class="values-grid" style="margin-top:24px;">
+        <div class="value-card" data-aos="fade-up" data-aos-delay="100"><div class="icon">❤️</div><h4>Compassion</h4><p>Every patient is treated with empathy and respect.</p></div>
+        <div class="value-card" data-aos="fade-up" data-aos-delay="200"><div class="icon">🏅</div><h4>Excellence</h4><p>We never compromise on quality of care.</p></div>
+        <div class="value-card" data-aos="fade-up" data-aos-delay="300"><div class="icon">🔒</div><h4>Integrity</h4><p>Transparent, ethical practice in everything we do.</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;" class="about-grid">
+        <div data-aos="fade-right">
+          <div class="section-label">Our Journey</div>
+          <h2 class="section-title">25 Years of<br>Healthcare Excellence</h2>
+          <div class="timeline" style="margin-top:32px;">
+            <div class="timeline-item"><div class="timeline-dot">99</div><div class="timeline-content"><h4>Founded in Bengaluru</h4><p>Dr. Aryan Kapoor opens the first MediCare clinic with a team of 12 doctors.</p></div></div>
+            <div class="timeline-item"><div class="timeline-dot">05</div><div class="timeline-content"><h4>First Multi-Specialty Hospital</h4><p>Expanded to a 200-bed facility with 15 specialties and NABH accreditation.</p></div></div>
+            <div class="timeline-item"><div class="timeline-dot">12</div><div class="timeline-content"><h4>Pan-India Expansion</h4><p>Opened centres in Mumbai, Delhi, and Chennai. Crossed 50,000 patients served.</p></div></div>
+            <div class="timeline-item"><div class="timeline-dot">18</div><div class="timeline-content"><h4>Digital Transformation</h4><p>Launched Electronic Health Records and Telemedicine platform serving 1M+ users.</p></div></div>
+            <div class="timeline-item"><div class="timeline-dot">24</div><div class="timeline-content"><h4>National Excellence Award</h4><p>Recognised as India's Best Healthcare Network by the National Health Authority.</p></div></div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=600&q=70" alt="Hospital facility" style="width:100%;height:500px;object-fit:cover;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer id="mainFooter"><div class="container"><div class="footer-grid"><div class="footer-brand"><h3>MediCare Plus</h3><p>India's most trusted healthcare network, combining clinical excellence with compassionate, patient-first care since 1999.</p><div class="social-icons"><div class="social-icon" onclick="window.location.href='404.html'" title="Instagram">📷</div><div class="social-icon" onclick="window.location.href='404.html'" title="Facebook">📘</div><div class="social-icon" onclick="window.location.href='404.html'" title="LinkedIn">💼</div></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Healthcare Services</h4><ul><li><a href="services.html">Consultation</a></li><li><a href="services.html">Emergency Care</a></li><li><a href="services.html">Diagnostics</a></li><li><a href="services.html">Dental Care</a></li><li><a href="services.html">Pediatrics</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="#">MG Road, Bengaluru 560001</a></li><li><a href="#">+91 80 4567 8900</a></li><li><a href="#">info@medicareplus.in</a></li><li><a href="#">Mon–Sat: 8AM–8PM</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 MediCare Plus. All rights reserved.</span><span>Designed for Healthcare Excellence</span></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
