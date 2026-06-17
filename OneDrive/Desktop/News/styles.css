@@ -25,11 +25,7 @@ img[loading="lazy"] {
     100% { background-position: -200% 0; }
 }
 
-/* Stop shimmer once image loads (JS-free; browser removes loading attribute) */
-img:not([loading]) {
-    animation: none;
-    background: none;
-}
+/* Shimmer is stopped by JS once each image loads (see script.js) */
 /* ──────────────────────────────────────────────────────────────────── */
 
 :root {
