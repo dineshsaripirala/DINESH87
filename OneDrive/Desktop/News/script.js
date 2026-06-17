@@ -99,19 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isUnlinked) btn.addEventListener('click', go404);
     });
 
-    // ── Stop shimmer once each lazy image has loaded ────────────────────────
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-        const stopShimmer = () => {
-            img.style.animation = 'none';
-            img.style.background = 'none';
-        };
-        if (img.complete && img.naturalWidth > 0) {
-            stopShimmer();
-        } else {
-            img.addEventListener('load', stopShimmer, { once: true });
-        }
-    });
-
     // ── Fade-in animation ───────────────────────────────────────────────────
     const fadeTargets = document.querySelectorAll('.fade-in-up');
     if (fadeTargets.length) {
